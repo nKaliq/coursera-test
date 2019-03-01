@@ -1,0 +1,58 @@
+*
+{
+  font-family:'Varela Round', sans-serif;
+  box-sizing: border-box;
+}
+
+#header-nav{
+ border-bottom: 3px solid black;
+ font-weight: bold;
+}
+
+#b1, #b2, #b3
+{
+  background-color: grey;
+  float: left;
+  margin-top: 50px;
+  margin-left: 1%;
+  margin-right: 1%;
+  overflow-y: scroll;
+  height: 250px;
+  width: 31%;
+}
+
+.menuitem
+{
+  width: 100%;
+  border-top: 2px solid black;
+  visibility: hidden;
+}
+
+/*Media Queries*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  #b1,#b2,#b3
+  {
+    width: 98%;
+  }
+
+  .menuitem
+  {
+    visibility: visible;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #b1,#b2{
+    width: 48%;}
+
+    #b3{
+    width: 100%;
+    }
+    button
+    {
+    visibility: hidden;
+    }
+
+ }
