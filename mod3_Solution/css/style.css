@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+button
+{
+visibility: hidden;
+}
+
+
 #header-nav{
  border-bottom: 3px solid black;
  font-weight: bold;
@@ -21,38 +27,71 @@
   width: 31%;
 }
 
-.menuitem
+#navbarSupportedContent > div{
+  box-sizing: border-box;
+  width:100%;
+  padding-left: 0px ;
+  padding-right: 0px ;
+}
+
+#menuitem
 {
-  width: 100%;
-  border-top: 2px solid black;
+  background-color: white;
+  padding: 0px;
   visibility: hidden;
 }
 
+#menuitem > div{
+  border-top:3px solid black;
+  width: 100%;
+
+  margin-left: 0px;
+  margin-right: 0px;
+  }
+
+#menuitem > div > a{
+    text-decoration: none;
+    color: black;
+    display:inline-block;
+    width:100%;
+    height:100%;
+  }
+
+#menuitem > div > a:hover {
+  color: white;
+  background-color: black;
+}
+
 /*Media Queries*/
-/* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
-  #b1,#b2,#b3
-  {
+@media (max-width: 575px) {
+  #b1,#b2,#b3{
     width: 98%;
   }
 
-  .menuitem
+  #menuitem
   {
+    visibility: visible;
+  }
+
+  button{
+    border: 3px solid black;
     visibility: visible;
   }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 768px) {
   #b1,#b2{
     width: 48%;}
 
     #b3{
     width: 100%;
     }
-    button
-    {
-    visibility: hidden;
+    #menuitem{
+      visibility: visible;
     }
 
+    button{
+    visibility: visible;
+    }
  }
